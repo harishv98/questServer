@@ -4,7 +4,9 @@
 
 <web-app>
   <display-name>Questions</display-name>
-  
+  <listener>
+    <listener-class>com.questions.dbInitializer.MyservletListener</listener-class>
+  </listener>
   <servlet>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
